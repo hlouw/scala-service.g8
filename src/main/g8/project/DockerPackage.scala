@@ -13,8 +13,8 @@ object DockerPackage {
 
   private val settings = Seq(
     dockerBaseImage := "alpine",
-    dockerRepository := Some("hlouw"),
-    packageName in Docker := "dcos-rest-service",
+    dockerRepository := Some("$dockerRepository$"),
+    packageName in Docker := "$name;format="norm"$",
     dockerExposedPorts := Seq(8080),
     dockerCommands := dockerCommands.value.head +: setupAlpine ++: dockerCommands.value.tail
   )

@@ -2,7 +2,7 @@ import sbt.Keys._
 import DockerPackage._
 
 lazy val buildSettings = Seq(
-  name := "$name;format="lower,hyphen"$",
+  name := "$name;format="norm"$",
   organization := "$organization$",
   version := "0.0.1",
   scalaVersion := "2.11.8",

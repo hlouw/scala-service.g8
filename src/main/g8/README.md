@@ -1,3 +1,3 @@
-# $name;format="lower,hyphen"$
+# $name$
 
 A Scala service.
